@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="mainForm" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="254.0" prefWidth="945.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WebExecuter.WE_Ctrler">
+   <children>
+      <Button fx:id="btnAdd" layoutX="840.0" layoutY="20.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" text="ADD" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="20.0" />
+      <Button fx:id="btnDelete" layoutX="801.0" layoutY="61.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" text="DELETE" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="60.0" />
+      <Button fx:id="btnEnd" layoutX="801.0" layoutY="190.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="80.0" text="END" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="25.0" />
+      <TableView fx:id="tv" layoutX="28.0" layoutY="46.0" prefHeight="234.0" prefWidth="798.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="137.0" AnchorPane.topAnchor="10.0">
+        <columns>
+          <TableColumn fx:id="hostCol" prefWidth="197.0" text="HOST/NAME" />
+          <TableColumn fx:id="urlCol" maxWidth="10000.0" minWidth="0.0" prefWidth="600.0" text="URL" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnEdit" layoutX="801.0" layoutY="107.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" text="EDIT" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="100.0" />
+      <CheckBox fx:id="chkNo" layoutX="821.0" layoutY="141.0" mnemonicParsing="false" text="Can Access?" AnchorPane.rightAnchor="5.0" />
+   </children>
+</AnchorPane>
