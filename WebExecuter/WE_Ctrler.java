@@ -101,14 +101,7 @@ public class WE_Ctrler implements Initializable {
 		urlCol.setCellValueFactory( new PropertyValueFactory<WE_Item, String>("url") );
 
 		readProperties( "WE_Prop.properties" ); //.propertyファイルの読み込み
-
-		//デフォルトブラウザが設定されていな場合は終了
-		if( this.exePath == null ) {
-
-		}
-
 		readDataFile(); //.txtファイルからデータを読み込み
-
 	}
 
 	/**要素追加**/
