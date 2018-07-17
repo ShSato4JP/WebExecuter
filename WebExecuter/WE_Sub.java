@@ -55,7 +55,7 @@ public class WE_Sub implements Initializable{
 	}
 
 	//EDIT
-	WE_Sub( Window owner, WE_Item target ) {
+	public WE_Sub( Window owner, WE_Item target ) {
 		try {
 			loader = new FXMLLoader(getClass().getResource("sub.fxml"));
 			loader.setController(this);
@@ -131,7 +131,7 @@ public class WE_Sub implements Initializable{
 		/*
 		 * ～broList にデータを格納～
 		 * name[0], url[1], name[2], url[3]の順で格納されるため、
-		 * nameを基にURLを取り出すため偶数列のみループのインデックスの対象
+		 * nameを基にURLを取り出すため偶数列のみのインデックスの対象
 		 */
 		for (int i = 0; i < items.length; i = i + 2) {
 			broList.put( items[i], items[i + 1]); //name, url
@@ -151,7 +151,7 @@ public class WE_Sub implements Initializable{
 		/*
 		 * ～broList からキーを取得～
 		 * name[0], url[1], name[2], url[3]の順で格納されるため、
-		 * urlを基にnameを取り出すため基数列のみループのインデックスの対象
+		 * urlを基にnameを取り出すため基数列のみインデックスの対象
 		 */
 		for (int i = 1; i < bros.length; i = i + 2) {
 			if ( targetPath.equals( bros[i] ) ) {
